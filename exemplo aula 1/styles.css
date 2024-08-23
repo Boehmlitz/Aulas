@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    background-color: #1a1a1d;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #66fcf1;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #2d2d2d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Estilo dos rótulos */
+label {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilo dos inputs */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #45a29e;
+    border-radius: 5px;
+    background-color: #1f2833;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #66fcf1;
+    outline: none;
+    box-shadow: 0 0 10px #66fcf1;
+}
+
+/* Estilo do botão */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #45a29e;
+    color: #1f2833;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button[type="submit"]:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+    box-shadow: 0 0 15px #66fcf1;
+    transform: translateY(-3px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Efeitos de animação no formulário */
+form {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
